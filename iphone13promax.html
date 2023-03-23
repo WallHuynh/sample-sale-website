@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <title>Iphone 13 Pro Max</title>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <!-- Thanh Navbar -->
+    <div class="navbarr container-fluid m-0 p-0">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-success ps-3 pe-3">
+        <span class="navbar-brand">Wsale.com</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#loginregister"
+                >Đăng nhập/Đăng ký</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#trolley"
+                >Giỏ hàng</a
+              >
+            </li>
+          </ul>
+          <!--  form1 -->
+          <form class="d-flex seach">
+            <input
+              class="form-control me-2"
+              type="text"
+              placeholder="Bạn muốn tìm gì?"
+            />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <ul class="row bar bg-light">
+        <li class="col-xl-1">
+          <a class="nav-link" href="phones.html">Điện thoại</a>
+        </li>
+
+        <li class="col-xl-1">
+          <a class="nav-link" href="laptops.html">Laptop</a>
+        </li>
+        <li class="col-xl-1">
+          <a class="nav-link" href="spareparts.html">Phụ kiện</a>
+        </li>
+        <li class="col-xl-1">
+          <a class="nav-link" href="smartwatchs.html">Smart watch</a>
+        </li>
+        <li class="col-xl-1">
+          <a class="nav-link" href="#">Máy cũ giá rẻ</a>
+        </li>
+        <li class="col-xl-1">
+          <a class="nav-link" href="#">Sim số, thẻ cào</a>
+        </li>
+        <li class="col-xl-1">
+          <a class="nav-link" href="#">Khuyến mãi</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Gio Hang -->
+    <div class="offcanvas offcanvas-end" id="trolley">
+      <div class="offcanvas-header trollheader">
+        <h3 class="offcanvas-title trolleytitle">Giỏ hàng của bạn</h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body trolleybody">
+        <div class="fields">
+          <span class="field">Sản phẩm</span>
+          <span class="field">Số lượng</span>
+        </div>
+
+        <div class="trolleycase" id="quantity11">
+          <div class="productstrolley">
+            <img class="illustratortrolley" src="img/lgv50.jpg" />
+            <div class="detailtrolley">
+              <p class="detail">LG V50 ThinQ 5G</p>
+              <p class="detail">128Gb</p>
+              <p class="detail">5.990.000<sup>đ</sup></p>
+            </div>
+          </div>
+          <div class="changetrolley">
+            <button class="modify1" onclick="quantityChange1(-1)">-</button>
+            <p class="quantity" id="quantity1">2</p>
+            <button class="modify2" onclick="quantityChange1(1)">+</button>
+          </div>
+        </div>
+
+        <div class="trolleycase" id="quantity22">
+          <div class="productstrolley">
+            <img class="illustratortrolley" src="img/ip13promax.jpg" />
+            <div class="detailtrolley">
+              <p class="detail">Iphone 13 Pro Max</p>
+              <p class="detail">1Tb</p>
+              <p class="detail">49.990.000<sup>đ</sup></p>
+            </div>
+          </div>
+          <div class="changetrolley">
+            <button class="modify1" onclick="quantityChange2(-1)">-</button>
+            <p class="quantity" id="quantity2">1</p>
+            <button class="modify2" onclick="quantityChange2(1)">+</button>
+          </div>
+        </div>
+
+        <p class="totalAll">Tổng cộng:</p>
+        <span class="totalAll" id="total">61.970.000</span><sup>đ</sup> <br />
+
+        <button
+          class="btn btn-secondary"
+          onclick="window.location.href='payment.html'"
+          id="order"
+          type="button"
+        >
+          Đặt hàng ngay
+        </button>
+      </div>
+    </div>
+
+    <!-- Login-register -->
+    <div class="offcanvas offcanvas-start" id="loginregister">
+      <div class="offcanvas-header logheader">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body loginbd">
+        <ul class="nav nav-pills loglist" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#home"
+              >Đăng nhập</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Đăng ký</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="container tab-pane active">
+            <br />
+            <form action="/login_page.php" class="was-validated" id="login">
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label">Số điện thoại:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="uname"
+                  placeholder="Enter phone number"
+                  name="uname"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Mật khẩu:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="myCheck"
+                  name="remember"
+                />
+                <label class="form-check-label" for="myCheck"
+                  >Tự động đăng nhập cho lần sau</label
+                >
+                <a class="login-link" href="#">Quên mật khẩu</a>
+              </div>
+              <button type="submit" class="btn btn-primary logbtn">
+                Đăng nhập
+              </button>
+            </form>
+          </div>
+
+          <div id="menu1" class="container tab-pane fade">
+            <br />
+            <form
+              action="/register_page.php"
+              class="was-validated"
+              id="register"
+            >
+              <div class="mt-3">
+                <label for="uname" class="form-label">Họ và tên:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullname"
+                  placeholder="Enter your full name"
+                  name="ufullname"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mt-3">
+                <label for="uname" class="form-label">Số điện thoại:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  name="uphone"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mt-3">
+                <label for="uname" class="form-label">Số điện thoại:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email address"
+                  name="uemail"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="id" class="form-label">Tài khoản:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="id"
+                  placeholder="Enter username"
+                  name="uid"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Mật khẩu:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Nhập lại mật khẩu:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="rpwd"
+                  placeholder="Enter password"
+                  name="rpswd"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="myCheck"
+                  name="remember"
+                  required
+                />
+                <label class="form-check-label" for="myCheck"
+                  >Tôi đồng ý với điều khoản</label
+                >
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                  Check this checkbox to continue.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success logbtn">
+                Đăng ký
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid phones">
+      <div class="head-name">
+        <p class="nameheader">
+          Điện thoại Iphone 13 Pro Max <span id="space">128Gb</span>
+        </p>
+        <div class="stars">
+          <img class="star" src="img/stars.png" />
+          <img class="star" src="img/stars.png" />
+          <img class="star" src="img/stars.png" />
+          <img class="star" src="img/stars.png" />
+          <img class="star" src="img/stars.png" />
+        </div>
+        <a href="#reviews" class="review"><span>2</span> đánh giá</a>
+      </div>
+    </div>
+
+    <div class="row outer">
+      <div class="col-sm-8 pb-3 phone-slide">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="10"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="11"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="12"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="13"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="14"
+              ></button>
+            </div>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner images">
+            <div class="carousel-item active">
+              <img
+                src="img/13promax1.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax2.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax3.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax4.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax5.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax6.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax7.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax8.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax9.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax10.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax11.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax12.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax13.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax14.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/13promax15.jpg"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="mt-3">
+          <img
+            src="img/iphone-13-pro-max.jpg"
+            style="width: 100%; border-radius: 5px"
+          />
+        </div>
+
+        <div class="container mt-3">
+          <p class="intro mt-3">Thông tin sản phẩm</p>
+          <p class="intro">
+            iPhone 13 Pro Max một siêu phẩm đến từ nhà Apple chắc chắn đang được
+            rất nhiều sự quan tâm từ iFan. Chiếc điện thoại này sở hữu màn hình
+            siêu đẹp, hiệu năng bức phá từ con chip Apple A15 Bionic sẽ cho bạn
+            trải nghiệm tuyệt vời, từ những tác vụ thông thường cho đến các ứng
+            dụng chuyên nghiệp.
+          </p>
+          <div class="d-grid">
+            <button
+              type="button"
+              class="btn btn-outline-info dropdown-toggle"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Xem thêm
+            </button>
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Thông tin sản phẩm</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="inside-modal-body">
+                  <p class="intro mt-3">Thông tin sản phẩm</p>
+                  <p class="intro">
+                    iPhone 13 Pro Max 512GB một siêu phẩm đến từ nhà Apple chắc
+                    chắn đang được rất nhiều sự quan tâm từ iFan. Chiếc điện
+                    thoại này sở hữu màn hình siêu đẹp, hiệu năng bức phá từ con
+                    chip Apple A15 Bionic sẽ cho bạn trải nghiệm tuyệt vời, từ
+                    những tác vụ thông thường cho đến các ứng dụng chuyên
+                    nghiệp.
+                  </p>
+                  <p class="intro mt-3">Thiết kế đậm chất Apple</p>
+                  <p>
+                    Sang trọng - lịch lãm là những từ sẽ hiện lên đầu tiên khi
+                    nói về thiết kế của iPhone 13. Phần khung được làm từ thép
+                    không gỉ được tạo hình vuông vức, mặt lưng bằng kính vô cùng
+                    đẹp mắt, ở phiên bản này vẫn được giữ lại tai thỏ nhưng với
+                    một kích nhỏ gọn hơn 20% so với trước đây, việc thu nhỏ tai
+                    thỏ giúp màn hình trong rộng rãi hơn.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-1.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Hơn nữa, chiếc điện thoại còn có khả năng kháng bụi, nước
+                    chuẩn IP68, bạn có thể an tâm sử dụng, điện thoại sẽ an toàn
+                    hơn khi không may tiếp xúc với nước hay gặp trời mưa. Cụm
+                    camera vẫn được giữ phong cách thiết kế cũ điểm khác biệt
+                    duy nhất là cảm biến có kích thước lớn hơn.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-2.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Sẽ có 4 phiên bản màu sắc cho bạn lựa chọn là Xám, Vàng Đồng
+                    , Bạc và Xanh Sierra, mỗi màu sắc đều có khí chất riêng
+                    biệt, thể hiện cho từng tính cách.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-3.jpg"
+                    class="imagess"
+                  />
+                  <p class="intro mt-3">
+                    Thể hiện hình ảnh siêu sắc nét, màu sắc vô cùng sống động
+                  </p>
+                  <p>
+                    Chiếc iPhone 13 Pro Max sở hữu màn hình OLED có kích thước
+                    6.7 inch kết hợp cùng độ phân giải 1284 x 2778 Pixels cho
+                    hình ảnh hiển thị một cách sắc nét, màu sắc của hình ảnh
+                    được thể hiện một cách chính xác nhất.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-4.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Công nghệ Super Retina XDR mang đến khả năng tiết kiệm năng
+                    lượng vượt trội nhưng vẫn đảm bảo nội dung được hiển thị vô
+                    cùng sống động chân thực.
+                  </p>
+                  <p>
+                    Tần số quét 120 Hz bạn có thể cảm nhận độ mượt trên từng đầu
+                    ngón tay khi thao tác trên màn hình với tốc độ làm mới gấp
+                    đôi các thế hệ trước. Từ hiệu ứng chuyển cảnh cho đến thao
+                    tác vuốt chạm hay thu phóng đều trở nên mượt mà hơn bao giờ
+                    hết.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-6.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Không dừng lại ở đó màn hình còn được trang bị công nghệ
+                    ProMotion có khả năng chuyển đổi tần số quét từ 10 đến 120
+                    lần mỗi giây tùy vào từng nội dung bạn đang trải nghiệm vừa
+                    đảm bảo hiệu năng vừa tiết kiệm năng lượng.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-5.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Công nghệ True Tone với khả năng điều chỉnh độ sáng và màu
+                    sắc màn hình kết hợp với dải màu rộng chuẩn điện ảnh P3 sẽ
+                    cho những bộ phim bạn đang thưởng thức trở nên vô cùng rực
+                    rỡ không thua kém gì khi xem trên tivi.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-8.jpg"
+                    class="imagess"
+                  />
+                  <p class="intro mt-3">
+                    Tạo nên những bức ảnh đẹp không tưởng với cụm camera hiện
+                    đại
+                  </p>
+                  <p>
+                    Cả 3 camera trên iPhone 13 Pro Max đều tích hợp cảm biến mới
+                    với chất lượng ống kính hàng đầu, camera chính có khẩu độ
+                    lên tới f/1.5 kích thước điểm ảnh 1.9um đây là một kích
+                    thước hiếm thấy trên một chiếc điện thoại di động. Nó đem
+                    đến khả năng thu sáng tốt bạn có thể chụp ảnh ở bất kỳ môi
+                    trường sáng nào.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-9.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Camera góc siêu rộng có khẩu độ f/1.8 mang đến khả năng cảm
+                    biến nhanh hơn, cho ra đời những bức ảnh góc siêu rộng thật
+                    tự nhiên. Bạn có thể thoải mái ghi lại những cảnh đẹp khi đi
+                    du lịch.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-10.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Cuối cùng là camera tele hỗ trợ phóng to hình ảnh và video
+                    gấp 3 lần nhưng vẫn giữ được chất lượng hình ảnh, video. Hơn
+                    nữa nó có thể lấy nét ở khoảng cách 2 cm, điều này giúp bạn
+                    có thể chụp được ảnh macro, giúp bạn khám phá thế giới nhỏ
+                    bé xung quanh.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-11.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Nó còn tích hợp thêm tính năng xóa phông, bộ lọc đa dạng làm
+                    bức ảnh của bạn trở nên nghệ thuật hơn.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-12.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Chụp đêm sáng rõ sáng hơn nhờ cảm biến LiDAR, kết hợp cùng
+                    chip xử lý hình ảnh ISP mới tích hợp trên Apple A15 Bionic
+                    và các thuật toán giúp thu sáng tốt hơn tới 2.2 lần ở camera
+                    chính và hơn 92% ở camera góc siêu rộng.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-13.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Apple còn tích hợp thêm cho chiếc máy này chế độ quay video
+                    xóa phông điện ảnh Cinematic có thể lấy nét chủ thể, làm mờ
+                    hậu cảnh và những nhân vật khác trong khung hình một cách tự
+                    nhiên. Không dừng lại ở đây, nó còn có thể đổi chủ thể lấy
+                    nét một cách dễ dàng cả trong và sau khi quay, giúp bạn tạo
+                    nên những thước phim chất lượng điện ảnh.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-14.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Bạn có thể ghi và chỉnh sửa video ở định dạng nén ProRes
+                    hoặc Dolby Vision, thực hiện quy trình chuẩn "end-to-end"
+                    ngay trên chiếc điện thoại nhỏ nhắn của mình. Được biết đây
+                    là dòng dòng điện thoại đầu tiên làm được điều này, với
+                    những thiết lập chuyên sâu bạn có thể tạo nên những thước
+                    phim chất lượng cao.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-15.jpg"
+                    class="imagess"
+                  />
+                  <p class="intro mt-3">
+                    Hiệu năng vô cùng mạnh mẽ “cân” mọi tác vụ
+                  </p>
+                  <p>
+                    iPhone 13 Pro Max được trang bị bộ vi xử lý Apple A15 Bionic
+                    mới nhất của hãng, được sản xuất trên tiến trình 5nm, mang
+                    đến hiệu năng vô đối cùng khả năng tiết kiệm năng lượng
+                    tuyệt vời. Giải trí, học tập hay làm việc ở tốc độ cao nhờ
+                    được hỗ trợ kết nối mạng 5G.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-16.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    So với các đối thủ hiện tại trên thị trường, con chip Apple
+                    A15 Bionic mang đến hiệu năng GPU mạnh hơn đến 50%. Nó có
+                    thể thực hiện 15.8 nghìn tỷ phép tính mỗi giây, mọi tác vụ
+                    phức tạp trên điện thoại đều được xử lý trong với tốc độ
+                    vượt trội, mọi game nặng đều được tái hiện với đồ họa sống
+                    động và mượt mà.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-17.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Ngoài ra máy còn được trang bị kết nối mạng không dây chuẩn
+                    Wi-Fi 6 với nhiều băng tần 5G, cho khả năng truyền tải nhanh
+                    chóng bạn không cần phải chờ đợi quá lâu, xem phim chất
+                    lượng cao và chơi game mượt mà gần như không có độ trễ.
+                  </p>
+                  <p>
+                    Hệ điều hành iOS 15 tối ưu hiển thị thông báo hơn thay vì
+                    sắp xếp nội dung theo ứng dụng hoặc theo ngày như trước thì
+                    thông báo sẽ hiển thị ưu tiên của người dùng. Khi bật chế độ
+                    "Không làm phiền" bạn vẫn có thể chọn ra một số ứng dụng
+                    hoặc người quan trọng để nhận thông báo.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-18.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    RAM 6 GB và ROM 512 GB cho đa nhiệm ổn định, khả năng chuyển
+                    đổi qua lại giữa các ứng dụng mượt mà, không gian lưu trữ
+                    siêu khủng nếu bạn là người thích quay phim chụp ảnh thì nó
+                    là sẽ là một sự hỗ trợ tuyệt vời dành cho bạn.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-19.jpg"
+                    class="imagess"
+                  />
+                  <p class="intro mt-3">
+                    Viên pin khủng nhất từ trước đến này của iPhone
+                  </p>
+                  <p>
+                    Với dung lượng pin lớn hơn kết hợp cùng bộ vi xử lý Apple
+                    A15 Bionic có tiết kiệm năng lượng hơn giúp chiếc iPhone 13
+                    Pro Max này trở thành chiếc iPhone có thời lượng pin tốt
+                    nhất từ trước đến nay, nó có thời gian sử dụng dài hơn 2.5
+                    giờ so với iPhone 12 Pro Max.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-20.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    Ở thế hệ này vẫn hỗ trợ sạc nhanh với công suất 20 W thông
+                    qua cáp sạc và sạc qua MagSafe ở công suất là 15 W hoặc có
+                    thể sạc không dây dựa trên Qi với tốc độ 7.5 W.
+                  </p>
+                  <img
+                    src="img/iphone-13-pro-max-512gb-21.jpg"
+                    class="imagess"
+                  />
+                  <p>
+                    iPhone 13 Pro Max 512GB với những cải tiến về hiệu năng, khả
+                    năng chụp ảnh và thời lượng pin hứa hẹn sẽ làm hài lòng mọi
+                    người yêu công nghệ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3" id="reviews">
+          <p class="intro ms-3 mt-3">Đánh giá điện thoại Iphone 13 Pro Max</p>
+          <div class="review">
+            <p class="review-name">Thúy Vy</p>
+            <div class="review-stars">
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+            </div>
+            <p>
+              13 pro max năm nay rất đã, vuốt rất mượt, máy rất ít nóng, camera
+              xuất sắc, pin trâu, dùng hơn 1 ngày vẫn chưa hết pin, đáng tiền
+              lắm luôn
+            </p>
+          </div>
+          <div class="review">
+            <p class="review-name">Thanh Vy</p>
+            <div class="review-stars">
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+              <img class="star" src="img/stars.png" />
+            </div>
+            <p>
+              Máy dùng rất ngon, pin khoẻ dùng cả ngày không cần sạc, màn hình
+              hiển thị sắc nét, cấu hình máy khoẻ, chiến game chán chê không
+              nóng máy, tụt pin rất ít, nghe nhạc âm bass rất tốt, nhân viên tư
+              vấn nhiệt tình, dù nhận hàng chậm hơn một ngày so với ngày mở bán,
+              nhưng không sao, lỗi đó có thể bỏ qua cho được, mua sớm được nhiều
+              khuyến mãi tốt hơn so với các năm khac, cảm thấy con ip này rất
+              đáng đồng tiền bỏ ra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 options">
+        <div class="btn-group">
+          <button type="button" class="btn btn-light option" id="space1">
+            128Gb
+          </button>
+          <button type="button" class="btn btn-light option" id="space2">
+            256Gb
+          </button>
+          <button type="button" class="btn btn-light option" id="space3">
+            512Gb
+          </button>
+          <button type="button" class="btn btn-light option" id="space4">
+            1Tb
+          </button>
+        </div>
+
+        <div class="btn-group mt-3">
+          <button type="button" class="btn btn-light option">Vàng đồng</button>
+          <button type="button" class="btn btn-light option">Xám</button>
+          <button type="button" class="btn btn-light option">Bạc</button>
+          <button type="button" class="btn btn-light option">Xanh dương</button>
+        </div>
+
+        <div class="mt-3">
+          <p>
+            Giá: <strong><span id="prices">33.990.000</span></strong
+            ><sup>đ</sup>
+          </p>
+        </div>
+
+        <div class="d-grid gap-3">
+          <button
+            type="button"
+            onclick="window.location.href='payment.html'"
+            class="btn btn-warning btn-block"
+          >
+            Mua ngay
+          </button>
+          <button type="button" class="btn btn-primary btn-block">
+            Cho vào giỏ hàng
+          </button>
+        </div>
+        <p class="mt-5 p-2 configuration">
+          Cấu hình điện thoại Iphone 13 Pro Max
+        </p>
+        <div class="mt-3 configurations">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Màn hình:</td>
+                <td>OLED6.7",Super Retina, XDR</td>
+              </tr>
+              <tr>
+                <td>Hệ điều hành:</td>
+                <td>iOS 15</td>
+              </tr>
+              <tr>
+                <td>Camera sau:</td>
+                <td>3 camera 12 MP</td>
+              </tr>
+              <tr>
+                <td>Camera trước:</td>
+                <td>12 MP</td>
+              </tr>
+              <tr>
+                <td>Chip:</td>
+                <td>Apple A15 Bionic</td>
+              </tr>
+              <tr>
+                <td>Chip:</td>
+                <td>Apple A15 Bionic</td>
+              </tr>
+              <tr>
+                <td>Ram:</td>
+                <td>6Gb</td>
+              </tr>
+              <tr>
+                <td>Bộ nhớ trong:</td>
+                <td>128Gb/256Gb/512Gb/1Tb</td>
+              </tr>
+              <tr>
+                <td>Sim:</td>
+                <td>1 Nano SIM & 1 eSIM, Hỗ trợ 5G</td>
+              </tr>
+              <tr>
+                <td>Pin, Sạc:</td>
+                <td>4352mAh, 20W</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="mt-3 pt-4 bg-dark text-white text-center container-fluid footer"
+    >
+      <div class="row">
+        <div class="col-sm-3">
+          <p><a class="link" href="#">Lịch sử mua hàng</a></p>
+          <p><a class="link" href="#">Cộng tác bán hàng cùng tôi</a></p>
+          <p><a class="link" href="#">Tìm hiểu về mua trả góp</a></p>
+          <p><a class="link" href="#">Chính sách bảo hành</a></p>
+          <p
+            type="button"
+            class="btn-sm btn-primary dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#more"
+          >
+            Xem thêm
+          </p>
+          <div id="more" class="collapse">
+            <p><a class="link" href="#">Giao hàng & Thanh toán</a></p>
+            <p><a class="link" href="#">Hướng dẫn mua online</a></p>
+            <p><a class="link" href="#">Chính sách đổi trả</a></p>
+            <p><a class="link" href="#">Phiếu mua hàng</a></p>
+            <p><a class="link" href="#">In hóa đơn điện tử</a></p>
+            <p><a class="link" href="#">Quy chế hoạt động</a></p>
+            <p><a class="link" href="#">Nội quy cửa hàng</a></p>
+            <p><a class="link" href="#">Cảnh báo giả mạo</a></p>
+            <p>
+              <a class="link" href="#">Chính sách khui hộp sản phẩm Apple</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <p><a class="link" href="#">Giới thiệu công ty</a></p>
+          <p><a class="link" href="#">Tuyển dụng</a></p>
+          <p><a class="link" href="#">Gửi góp ý, khiếu nại</a></p>
+          <p><a class="link" href="#">Tìm siêu thị (3.008 shop)</a></p>
+          <p><a class="link" href="#">Xem bản mobile</a></p>
+        </div>
+        <div class="col-sm-3">
+          <p><a class="link" href="#">Tổng đài hỗ trợ (Miễn phí gọi)</a></p>
+          <p><a class="link" href="#">Gọi mua: 1800.xxx (7:30 - 22:00)</a></p>
+          <p><a class="link" href="#">Kỹ thuật: 1800.yyyy (7:30 - 22:00)</a></p>
+          <p>
+            <a class="link" href="#">Khiếu nại: 1800.zzzz (8:00 - 21:30)</a>
+          </p>
+          <p><a class="link" href="#">Bảo hành: 1800.iiii (8:00 - 21:00)</a></p>
+        </div>
+        <div class="col-sm-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="mySwitch"
+            name="greymode"
+            value="yes"
+            checked
+          />
+          <span class="nav-link form-check-label" href="#" id="mode"
+            >Giao diện Lightmode</span
+          >
+          <div class="social">
+            <img src="img/fb_icon.png" /><a href="#">Facebook</a>
+          </div>
+          <br />
+          <div class="social">
+            <img src="img/ytb_icon.png" /><a href="#">Youtobe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
